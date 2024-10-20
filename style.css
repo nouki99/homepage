@@ -74,6 +74,50 @@ section {
     margin-bottom: 20px;
 }
 
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(219, 210, 164, 0.8); /* Semi-transparent Tan */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    color: #333;
+    border-radius: 50%;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(219, 210, 164, 1);
+}
+
 /* Footer */
 footer {
     background-color: #dbd2a4; /* Tan */
@@ -85,4 +129,12 @@ footer {
 footer p {
     margin: 0;
     color: #333;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .carousel-button {
+        font-size: 1.5em;
+        padding: 5px;
+    }
 }
