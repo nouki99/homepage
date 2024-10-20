@@ -1,20 +1,43 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #fffff0; /* Blonde */
 }
 
+/* Header */
 header {
-    background: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
+    position: relative;
+    background-color: #667591; /* Blue Gray */
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+header h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fffff0; /* Blonde */
+    margin: 0;
+}
+
+header nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(219, 210, 164, 0.8); /* Semi-transparent Tan */
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -22,35 +45,44 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav a {
-    color: white;
+nav ul li a {
     text-decoration: none;
+    color: #333; /* Dark Text for Readability */
+    font-weight: bold;
 }
 
+/* Main Content */
 main {
     padding: 20px;
 }
 
+main h2 {
+    color: #333;
+}
+
 section {
-    margin-bottom: 20px;
+    background-color: #f4efcf; /* Ash Gray */
     padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .main-image, .category-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
+/* Footer */
 footer {
+    background-color: #dbd2a4; /* Tan */
     text-align: center;
     padding: 10px;
-    background: #4CAF50;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #333;
 }
