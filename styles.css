@@ -1,0 +1,301 @@
+/* Base styles */
+:root {
+    --font-serif: 'Cormorant Garamond', serif;
+    --font-sans: 'Inter', sans-serif;
+    --color-text: #333333;
+    --color-background: #ffffff;
+    --color-muted: #666666;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+}
+
+.nav a:hover {
+    color: var(--color-muted);
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Bildschirmfoto%202025-01-14%20um%2016.20.02-vwJ4pPRFmE9pzjcqrEnFDU4tRN1i6b.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.btn-explore {
+    padding: 1rem 2rem;
+    border: 1px solid var(--color-text);
+    background: transparent;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-explore:hover {
+    background: var(--color-text);
+    color: var(--color-background);
+}
+
+/* Services Section */
+.services {
+    padding: 5rem 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.services h2 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.service-card {
+    text-align: center;
+}
+
+.service-icon {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto 1.5rem;
+    border: 1px solid var(--color-text);
+    padding: 1rem;
+}
+
+.service-card h3 {
+    font-family: var(--font-serif);
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: var(--color-muted);
+    margin-bottom: 1rem;
+}
+
+.btn-learn {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+}
+
+/* Instagram Section */
+.instagram {
+    padding: 5rem 2rem;
+    background: #f9f9f9;
+}
+
+.instagram-handle {
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.instagram-item {
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.instagram-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    padding: 5rem 2rem;
+    background: var(--color-background);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.footer h3 {
+    font-family: var(--font-serif);
+    margin-bottom: 1.5rem;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.footer-nav a:hover {
+    color: var(--color-muted);
+}
+
+.signup-form {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.signup-form input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid var(--color-text);
+}
+
+.btn-submit {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--color-text);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: var(--color-text);
+    color: var(--color-background);
+}
+
+.privacy-note {
+    font-size: 0.875rem;
+    color: var(--color-muted);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .services-grid,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .signup-form {
+        flex-direction: column;
+    }
+}
+
+
+
+
+ .instagram-grid {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+
+.instagram-item {
+    /*width: 33.33%;*/
+    width: 20%;
+    padding: 5px;
+    position: relative;
+}
+
+.instagram-item img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}

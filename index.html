@@ -1,84 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Spa</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <img src="images/header.png" alt="Header Image" class="header-image" />
-      <h1>Welcome to My Spa</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home / Overview</a></li>
-          <li><a href="#hobby">Hobby</a></li>
-          <li><a href="#berufliches">Berufliches</a></li>
-          <li><a href="#reisen">Reisen</a></li>
-          <li><a href="#gallery">Gallery</a></li> <!-- Added gallery link -->
-        </ul>
-      </nav>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annja Früh</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="logo">Annja Früh</div>
+    <nav class="nav">
+        <a href="#home">HOME</a>
+        <a href="#services">ARBEIT</a>
+        <a href="#services">HOBBY</a>
+<!--        <a href="#contact">CONTACT</a>-->
+<!--        <a href="#blog">BLOG</a>-->
+<!--        <a href="#social" class="social-icon">-->
+<!--            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">-->
+<!--                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>-->
+<!--                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>-->
+<!--                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>-->
+<!--            </svg>-->
+<!--        </a>-->
+    </nav>
+</header>
 
-    <main>
-      <section id="home">
-        <h2>Home / Overview</h2>
-        <img src="person.jpg" alt="A person" class="main-image" />
-        <p>
-          Welcome to my personal space where I share my hobbies, professional
-          journey, and travel experiences.
-        </p>
-      </section>
+<br/><br/><br/>
 
-      <section id="hobby">
-        <h2>Hobby</h2>
-        <img src="hobby.jpg" alt="Hobbies" class="category-image" />
-        <p>
-          Here are some of my favorite hobbies, including photography, painting,
-          and hiking.
-        </p>
-      </section>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Need words? You're in the right place.</h1>
+<!--        <button class="btn-explore">EXPLORE MORE</button>-->
+    </div>
+</section>
 
-      <section id="berufliches">
-        <h2>Berufliches</h2>
-        <img src="berufliches.jpg" alt="Professional" class="category-image" />
-        <p>
-          This section details my professional experiences, skills, and
-          projects.
-        </p>
-      </section>
-
-      <section id="reisen">
-        <h2>Reisen</h2>
-        <img src="reisen.jpg" alt="Travel" class="category-image" />
-        <p>
-          Join me on my travels around the world. Here are some of my favorite
-          destinations.
-        </p>
-      </section>
-
-      <!-- New Gallery Section -->
-      <section id="gallery">
-        <h2>Photo Gallery</h2>
-        <div class="carousel">
-          <button class="carousel-button prev">&#10094;</button>
-          <div class="carousel-images">
-            <img src="gallery/image1.jpg" alt="Image 1">
-            <img src="gallery/image2.jpg" alt="Image 2">
-            <img src="gallery/image3.jpg" alt="Image 3">
-            <img src="gallery/image4.jpg" alt="Image 4">
-            <img src="gallery/image5.jpg" alt="Image 5">
-          </div>
-          <button class="carousel-button next">&#10095;</button>
+<section class="services">
+    <h2>Themen rund um die Arbeit</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="/images/eins.jpg" alt="Writing icon" width="48" height="48">
+            </div>
+            <h3>Arbeitstechniken</h3>
+            <p>If you're searching for a seasoned wordsmith to upgrade the experience of your brand or marketing materials, look no further.</p>
+<!--            <a href="#learn-more" class="btn-learn">LEARN MORE</a>-->
         </div>
-      </section>
-    </main>
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="/images/zwei.jpg" alt="Laptop icon" width="48" height="48">
+            </div>
+            <h3>Referenzen</h3>
+            <p>Get the guidance and support you need to speak to your audience more powerfully than ever.</p>
+<!--            <a href="#learn-more" class="btn-learn">LEARN MORE</a>-->
+        </div>
+    </div>
+</section>
 
-    <footer>
-      <p>&copy; 2024 My Spa</p>
-    </footer>
+<section class="instagram">
+<!--    <p class="instagram-handle">@SHANLEYCOX</p>-->
+    <div class="instagram-grid">
+        <div class="instagram-item">
+            <img src="/images/placeholder.jpg" alt="Instagram post 1">
+        </div>
+        <div class="instagram-item">
+            <img src="/images/placeholder.jpg" alt="Instagram post 2">
+        </div>
+        <div class="instagram-item">
+            <img src="/images/placeholder.jpg" alt="Instagram post 3">
+        </div>
+        <div class="instagram-item">
+            <img src="/images/placeholder.jpg" alt="Instagram post 4">
+        </div>
+        <div class="instagram-item">
+            <img src="/images/placeholder.jpg" alt="Instagram post 5">
+        </div>
+        <div class="instagram-item">
+            <img src="/images/placeholder.jpg" alt="Instagram post 6">
+        </div>
+        <div class="instagram-item">
+            <img src="/images/placeholder.jpg" alt="Instagram post 7">
+        </div>
+        <div class="instagram-item">
+            <img src="/images/placeholder.jpg" alt="Instagram post 8">
+        </div>
+        <div class="instagram-item">
+            <img src="/images/placeholder.jpg" alt="Instagram post 8">
+            <div class="overlay">Post 4 description</div>
+        </div>
+        <div class="instagram-item">
+            <img src="/images/placeholder.jpg" alt="Instagram post 8">
+            <div class="overlay">Post 5 description</div>
+        </div>
+    </div>
+</section>
 
-    <script src="script.js"></script> <!-- Added script for carousel functionality -->
-  </body>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-browse">
+            <h3>BROWSE</h3>
+            <nav class="footer-nav">
+                <a href="#work">Arbeit</a>
+                <a href="#hobby">Hobby</a>
+<!--                <a href="#writing">Writing</a>-->
+<!--                <a href="#consulting">Consulting</a>-->
+<!--                <a href="#blog">Blog</a>-->
+<!--                <a href="#contact">Contact</a>-->
+            </nav>
+        </div>
+        <div class="footer-signup">
+            <h3>Kontakt</h3>
+            <p>Für Anfragen zu Angeboten nutzen Sie bitte irgend@was.ch</p>
+<!--            <p>Sign up below for updates on promotions, collaborations and news from the blog.</p>-->
+<!--            <form class="signup-form">-->
+<!--                <input type="email" placeholder="Search" required>-->
+<!--                <button type="submit" class="btn-submit">Submit</button>-->
+<!--            </form>-->
+<!--            <p class="privacy-note">We respect your privacy.</p>-->
+        </div>
+    </div>
+    <br/><br/><br/>
+    <div style="text-align: center">Copyright @ 2025</div>
+</footer>
+</body>
 </html>
