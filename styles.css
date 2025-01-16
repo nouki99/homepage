@@ -53,9 +53,18 @@ body {
 }
 
 /* Hero Section */
-.hero {
+.hero1 {
     height: 80vh;
     background-image: url('images/af.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background-image: url('images/header.jpeg');
     background-size: cover;
     background-position: center;
     position: relative;
