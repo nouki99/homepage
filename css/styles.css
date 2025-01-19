@@ -310,7 +310,7 @@ body {
 }
 
 .elite {
-    font-family: "Special Elite", serif;
+    font-family: "Special Elite", serif !important;
     font-weight: 400;
     font-style: normal;
   }
