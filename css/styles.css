@@ -315,3 +315,8 @@ body {
     font-style: normal;
   }
   
+
+.title-fix1 {
+    text-align: center;
+    margin-bottom: 2em;
+}
