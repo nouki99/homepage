@@ -1,13 +1,15 @@
 
 # homepage
+- https://nouki99.github.io/homepage/
 
+
+Running server
+--
 python -m http.server 8080
 
-https://fonts.google.com/selection/embed
 
 
 Das sollte auf der ersten Seite sichtbar sein:
-
 
 
 Kunst mit Sinn - KUNST MIT SINNEN. 
