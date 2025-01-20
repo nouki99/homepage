@@ -331,7 +331,12 @@ body {
 .header-title {
     margin-top: 1.3em;
     background-color: white;
-    padding: 0.1em 0.3em;
+
+    padding: 0.0em 3em;
     opacity: 0.8;
+
+    /*padding: 0.1em 0.3em;
+    opacity: 0.8;*/
+    
     filter: drop-shadow(2px 4px 6px black);
 }
