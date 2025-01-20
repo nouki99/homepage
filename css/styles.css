@@ -318,5 +318,11 @@ body {
 
 .title-fix1 {
     text-align: center;
+    margin-bottom: 1em;
+}
+
+
+.title-fix2 {
+    text-align: center;
     margin-bottom: 2em;
 }
