@@ -65,6 +65,7 @@ body {
 .hero {
     height: 65vh;
     background-image: url('../images/header.png');
+    background-image: url('../images/header4.png');
     background-size: cover;
     background-position: center;
     position: relative;
