@@ -342,15 +342,17 @@ h1.hero {
 
 .elite {
     font-family: 'jmh_typewriter', sans-serif !important;
+    font-style: normal;
+  }
 
-    //font-weight: 400;
+  .elite-o {
+    font-family: 'jmh_typewriter', sans-serif !important;
+    opacity: 0.5;
     font-style: normal;
   }
 
   .elite-bold {
     font-family: 'jmh_typewriterbold', sans-serif !important;
-
-    //font-weight: 400;
     font-style: bold;
   }
   
