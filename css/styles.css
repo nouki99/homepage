@@ -1,15 +1,15 @@
 
 @font-face {
     font-family: 'ElegantTypewriter';
-    src: url('fonts/ELEGANT TYPEWRITER Regular.ttf') format('truetype');
+    src: url('font/ELEGANT TYPEWRITER Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'jmh_typewriterbold';
-    src: url('fonts/jmh_typewriter-bold-webfont.woff2') format('woff2'),
-         url('fonts/jmh_typewriter-bold-webfont.woff') format('woff');
+    src: url('../font/jmh_typewriter-bold-webfont.woff2') format('woff2'),
+         url('../font/jmh_typewriter-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -332,8 +332,7 @@ h1.hero {
 }
 
 .elite {
-    //font-family: "Special Elite", serif !important;
-    font-family: 'ElegantTypewriter', sans-serif !important;
+    font-family: 'jmh_typewriterbold', sans-serif !important;
 
     font-weight: 400;
     font-style: normal;
