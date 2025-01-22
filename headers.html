@@ -68,30 +68,29 @@
         <a href="#contact">KONTAKT</a>
     </nav>
 
-    <!--
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&amp;display=swap" rel="stylesheet">
-    -->
-
     <script>
   // Number of header images you want to add
   const totalHeaders = 14;
 
   for (let i = 1; i <= totalHeaders; i++) {
-    // Create a new image element
-    const img = document.createElement('img');
+    // Create a heading element for the filename
+    const title = document.createElement('p');
+    // Set the text to the name of the file
+    title.innerText = `header${i}.jpg`;
 
+    // Create the image element
+    const img = document.createElement('img');
     // Set the src to point to the appropriate header image
     img.src = `images/headers/header${i}.jpg`;
-
     // Set image width to 100%
     img.style.width = '100%';
 
-    // Append the image to the body
+    // Append the title and the image to the body
+    document.body.appendChild(title);
     document.body.appendChild(img);
   }
 </script>
+
 </header>
 
 
