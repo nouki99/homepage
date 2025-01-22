@@ -131,8 +131,8 @@ h1.hero {
     margin-bottom: 2rem;
 }
 
-.hero h1 {
-    font-size: 2rem;
+.elite h1{
+    font-size: 2rem !important;
 }
 
 .btn-explore {
